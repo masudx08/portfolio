@@ -1,0 +1,83 @@
+/* 
+background color : #cccccc
+button color : #16907c
+text color : #323d43
+small text color: #6c7277
+*/
+
+/* Universal Style */
+body{
+    font-family: 'Dongle', sans-serif;
+    font-size: 30px;
+    font-weight: 200
+}
+
+*{margin: 0;}
+li{list-style-type: none}
+
+button{
+    border: none;
+    outline: none;
+    background-color: #16907c;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px
+}
+
+
+/* Header Style  */
+.header{
+   position:fixed;
+   top: 30%;
+   right: 0;
+   z-index: 1;
+   display: flex;
+   width: 30px;
+   flex-direction: row;
+}
+.header li{
+    display: inline-block;
+    cursor: pointer;
+    font-size: 20px;
+    /* border: 1px solid lightgray;
+    border-radius: 2px; */
+    background-color: #16907c;
+   color: white;
+   padding:0 10px;
+   margin: 5px 0;
+   border-radius: 5px 0 0 5px;
+
+}
+
+
+
+/* Hero Section  */
+.hero-section{
+    background-image: url("./images/Hero background1.jpg");
+    background-size: cover;
+    height: 595px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-section .content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    margin-right: 100px;
+}
+ .hero-section .intro{
+     line-height: 0.4 ;
+     font-size: 60px;
+ }
+.hero-section h1{
+    font-family: 'Balsamiq Sans', cursive;
+    color: #16907c;
+}
+.hero-section button{
+    width: 150px;
+    margin-top: 20px;
+}
