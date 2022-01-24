@@ -77,7 +77,7 @@ button{
 
 
 
-/* Hero Section  */
+/* Hero Section--------------------------------------------------------------------- */
 .hero{
     background-image: url("./images/hero.png");
     background-size: cover;
@@ -109,7 +109,7 @@ button{
     
     float: right;
     margin-right: 100px;
-    font-size: 2.3vw;
+    
 
 }
  .hero .intro{
@@ -123,18 +123,17 @@ button{
 
 
 
- /* Skill Section  */
+ /* Skill Section--------------------------------------------------------------------- */
  .skill{
-     display: flex;
      background-color: #55e6ce0d;
      box-shadow: 10px 10px 50px #55e6ce27;
-     padding-top: 50px
+     padding-top: 50px;
  }
 
+
+ 
  .skill .left-part{
-     width: 50%;
-     margin: 30px 100px;
-     font-size: 27px;
+     margin-top: 30px;
  }
  .skill .left-part div{
      margin-bottom: 10px;
@@ -145,22 +144,13 @@ button{
      font-weight: normal;
  }
 
- .skill .left-part p{
-     line-height: 100%;
- }
- .skill .left-part .little{
-     font-size: 25px;
-     line-height: 100%;
- }
+
+
  .skill .left-part h3{
      margin-bottom: 30px;
  }
 
- .skill .right-part{
-     width: 50%;
-    display: flex;
-    align-items: center;
- }
+
 
 .skill  .right-part img{
     width: 100%;
@@ -170,10 +160,9 @@ button{
 
 
 
- /* Project Skill  */
+ /* Project Section  */
  .project{
-    margin:0 100px;
-    margin-top: 70px;
+    padding-top: 50px;
 }
 .project .section-title{
     margin-bottom: 50px;
@@ -185,15 +174,8 @@ button{
 }
 
 
-.project .container{
-    display: flex;
-    align-content: space-between;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .project .container div{
-    width:45%;
     margin-bottom: 50px;
     line-height: 80%;
 }
@@ -205,22 +187,20 @@ button{
 
 
 
- /* Feedback  */
+ /* Feedback Section--------------------------------------------------------------------- */
  .feedback{
-    margin-left: 100px;
     margin-top: 70px;
+    width:80%;
+    margin: auto; 
+
  }
 
  .feedback img{
      width: 70px;
  }
  .feedback .container{
-     margin-top: 50px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
- 
-     
+     width: 80%;
+     margin-top: 50px; 
  }
  .feedback .container div{
      width: 200px;
@@ -250,9 +230,9 @@ button{
 
 
 
- /* Footer section  */
+/* Footer Section--------------------------------------------------------------------- */
  .footer{
-     width: 50%;
+     width: 80%;
      margin: auto;
      margin-top: 30px;
      text-align: center;
@@ -266,7 +246,8 @@ button{
      padding: 0 30px;
      border-radius: 0 0 10px 10px;
     color: #16907c;
-    font-weight: 400
+    font-weight: 400;
+    line-height: 80%;
 
  }
  .footer img{
@@ -286,25 +267,28 @@ button{
     }
    .hero .content {
        width: 40%;
-       font-size: 3vw;
        
    }
    .hero .profile{
        width: 200px;
    }
+   .skill{
+       padding: 0 7%;
+   }
   }
 @media only screen and (max-width: 667px) {
     .hero{
-        height: 350px;
+        height: 600px;
     }
    .hero .content {
        width: 25%;
        align-items: center;
    }
   }
+  
 @media only screen and (max-width: 540px) {
-    .hero{
-        height: 400px;
+    body{
+        font-size: 5vw;
     }
     .hero .profile{
         width: 100%;
@@ -319,8 +303,40 @@ button{
        width: 80%;
        margin: auto;
        padding-top: 30px;
+       
    }
-   
+   .project{
+       width: 80%;
+       margin: auto;
+   }
   }
 
 
+@media only screen and (min-width: 541px){
+    body{
+        font-size: 2.8vw;
+    }
+    .hero .content{
+        font-size: 2.8vw;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .hero .content{
+        font-size: 2.5vw;
+    }
+    .skill{
+        padding: 0 4%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .skill .left-part{
+        flex: 1;
+        padding: 0 5%;
+    }
+    .skill .right-part{
+        flex: 1;
+
+    }
+}
