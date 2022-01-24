@@ -43,7 +43,12 @@ h3{
     margin-top: 40px;
     border-radius: 0 30px 30px 0;
 }
-
+button{
+    cursor: pointer;
+}
+.section-title{
+    text-shadow: 0 5px 10px hsla(170, 74%, 62%, 0.253);
+}
 /* Universal Style End */
 
 
@@ -59,11 +64,10 @@ h3{
 }
 .header li{
     display: inline-block;
-    cursor: pointer;
     font-size: 20px;
     /* border: 1px solid lightgray;
     border-radius: 2px; */
-    background-color: #16907c;
+    background-color: #17927d;
    color: white;
    padding:0 10px;
    margin: 5px 0;
@@ -74,29 +78,45 @@ h3{
 
 
 /* Hero Section  */
-.hero-section{
-    background-image: url("./images/Hero background.jpg");
+.hero{
+    background-image: url("./images/hero.png");
     background-size: cover;
     height: 595px;
     overflow: hidden;
     position: relative;
+    box-shadow: -10px -10px 50px #55e6ce27;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero .profile{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(23,146,125,0.5) 0%, rgba(68,205,182,0.5) 80%);
+}
+.hero .profile img{
+    width: 60%;
+   height: auto;
 }
 
-.hero-section .content{
-    width: 60%;
-    height: 100%;
+.hero .content{
+    width: 50%;
+    padding: 0 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
     float: right;
     margin-right: 100px;
+    font-size: 2.3vw;
+
 }
- .hero-section .intro{
+ .hero .intro{
      line-height: 0.4 ;
-     font-size: 60px;
  }
 
-.hero-section button{
+.hero button{
     width: 150px;
     margin-top: 20px;
 }
@@ -106,6 +126,9 @@ h3{
  /* Skill Section  */
  .skill{
      display: flex;
+     background-color: #55e6ce0d;
+     box-shadow: 10px 10px 50px #55e6ce27;
+     padding-top: 50px
  }
 
  .skill .left-part{
@@ -149,14 +172,16 @@ h3{
 
  /* Project Skill  */
  .project{
-    margin: 30px 100px;
+    margin:0 100px;
+    margin-top: 70px;
 }
 .project .section-title{
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 .project .thumbnail{
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 
@@ -169,6 +194,8 @@ h3{
 
 .project .container div{
     width:45%;
+    margin-bottom: 50px;
+    line-height: 80%;
 }
 
 
@@ -180,8 +207,8 @@ h3{
 
  /* Feedback  */
  .feedback{
-    margin: 30px 100px;
-    
+    margin-left: 100px;
+    margin-top: 70px;
  }
 
  .feedback img{
@@ -192,10 +219,11 @@ h3{
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
+ 
      
  }
  .feedback .container div{
-     width: 300px;
+     width: 200px;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -203,9 +231,11 @@ h3{
      font-size: 25px;
      justify-content: space-between;
      text-align: center;
-    padding: 20px;
-    margin: 20px;
-
+     padding: 20px;
+     margin: 20px;
+     /* border: 1px solid lightgray; */
+     border-radius: 20px;
+     box-shadow: 5px 5px 30px #55e6ce27, -5px -5px 30px #55e6ce27;
  }
 
  .feedback .star{
@@ -217,3 +247,80 @@ h3{
  .feedback .unstar{
      color: rgb(163, 162, 162);
  }
+
+
+
+ /* Footer section  */
+ .footer{
+     width: 50%;
+     margin: auto;
+     margin-top: 30px;
+     text-align: center;
+     
+ }
+ .footer p{
+     font-size: 50px;
+    position: relative;
+    top: 30px;
+     display: inline-block;
+     padding: 0 30px;
+     border-radius: 0 0 10px 10px;
+    color: #16907c;
+    font-weight: 400
+
+ }
+ .footer img{
+     width: 100%;
+     height:auto;
+     margin: auto;
+ }
+
+
+
+/* ----------- Responsive design ---------- */
+
+/* Hero section  */
+@media only screen and (max-width: 1000px) {
+    .hero{
+        height: 400px;
+    }
+   .hero .content {
+       width: 40%;
+       font-size: 3vw;
+       
+   }
+   .hero .profile{
+       width: 200px;
+   }
+  }
+@media only screen and (max-width: 667px) {
+    .hero{
+        height: 350px;
+    }
+   .hero .content {
+       width: 25%;
+       align-items: center;
+   }
+  }
+@media only screen and (max-width: 540px) {
+    .hero{
+        height: 400px;
+    }
+    .hero .profile{
+        width: 100%;
+        
+        background: linear-gradient(90deg, rgba(23,146,125,0.6) 0%, rgba(68,205,182,0.6) 80%);
+    }
+    .hero .profile img{
+        width: 40%;
+    }
+   .hero .content {
+        align-items:flex-start;
+       width: 80%;
+       margin: auto;
+       padding-top: 30px;
+   }
+   
+  }
+
+
