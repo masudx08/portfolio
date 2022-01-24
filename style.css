@@ -3,9 +3,11 @@ background color : #cccccc
 button color : #16907c
 text color : #323d43
 small text color: #6c7277
+ large - font-family: 'Balsamiq Sans', cursive;
+ font-family: 'Dongle', sans-serif;
 */
 
-/* Universal Style */
+/* Universal Style Start */
 body{
     font-family: 'Dongle', sans-serif;
     font-size: 30px;
@@ -23,6 +25,26 @@ button{
     padding: 10px 15px;
     border-radius: 5px
 }
+h1, h2, h3{
+    font-family: 'Balsamiq Sans', cursive;
+}
+h1, h2{
+    color: #16907c;
+}
+h3{
+    color: #323d43
+}
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #16907c;
+    width: 70px;
+    height: 3px;
+    margin-top: 40px;
+    border-radius: 0 30px 30px 0;
+}
+
+/* Universal Style End */
 
 
 /* Header Style  */
@@ -53,7 +75,7 @@ button{
 
 /* Hero Section  */
 .hero-section{
-    background-image: url("./images/Hero background1.jpg");
+    background-image: url("./images/Hero background.jpg");
     background-size: cover;
     height: 595px;
     overflow: hidden;
@@ -73,11 +95,125 @@ button{
      line-height: 0.4 ;
      font-size: 60px;
  }
-.hero-section h1{
-    font-family: 'Balsamiq Sans', cursive;
-    color: #16907c;
-}
+
 .hero-section button{
     width: 150px;
     margin-top: 20px;
 }
+
+
+
+ /* Skill Section  */
+ .skill{
+     display: flex;
+ }
+
+ .skill .left-part{
+     width: 50%;
+     margin: 30px 100px;
+     font-size: 27px;
+ }
+ .skill .left-part div{
+     margin-bottom: 10px;
+ }
+ .skill .left-part b{
+     color: #16907c;
+     letter-spacing: 2px;
+     font-weight: normal;
+ }
+
+ .skill .left-part p{
+     line-height: 100%;
+ }
+ .skill .left-part .little{
+     font-size: 25px;
+     line-height: 100%;
+ }
+ .skill .left-part h3{
+     margin-bottom: 30px;
+ }
+
+ .skill .right-part{
+     width: 50%;
+    display: flex;
+    align-items: center;
+ }
+
+.skill  .right-part img{
+    width: 100%;
+}
+
+
+
+
+
+ /* Project Skill  */
+ .project{
+    margin: 30px 100px;
+}
+.project .section-title{
+    margin-bottom: 30px;
+}
+.project .thumbnail{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.project .container{
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project .container div{
+    width:45%;
+}
+
+
+
+
+
+
+
+
+ /* Feedback  */
+ .feedback{
+    margin: 30px 100px;
+    
+ }
+
+ .feedback img{
+     width: 70px;
+ }
+ .feedback .container{
+     margin-top: 50px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+ }
+ .feedback .container div{
+     width: 300px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     line-height: 1;
+     font-size: 25px;
+     justify-content: space-between;
+     text-align: center;
+    padding: 20px;
+    margin: 20px;
+
+ }
+
+ .feedback .star{
+     color: rgb(228, 188, 9);
+     font-size: 27px;
+     letter-spacing:3px;
+     
+ }
+ .feedback .unstar{
+     color: rgb(163, 162, 162);
+ }

@@ -19,16 +19,23 @@
     <div class="header">
        
         <div>
-            <li title="Home">H</li>
-            <li title="Skills">S</li>
-            <li title="Projects">P</li>
-            <li title="Blogs">B</li>
-            <li title="Clients">C</li>
+            <a href="#home">
+                <li title="Home">H</li>
+            </a>
+            <a href="#skill">
+                <li title="Skills">S</li>
+            </a>
+            <a href="#project">
+                <li title="Projects">P</li>
+            </a>
+            <a href="#feedback">
+                <li title="Feedback">F</li>
+            </a>
         </div>
     </div>
 
     <!-- Hero Section  -->
-    <div class="hero-section">
+    <div class="hero-section" id="#home">
             <!-- <div class="profile">
                 <img src="./images/profile.png" alt="" >
             </div> -->
@@ -36,7 +43,7 @@
             <p class="intro">Hello, I'm</p>
             <h1>Full Stack <span class="dev">Developer</span></h1>
             <p>
-               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae aspernatur sit culpa blanditiis magni ea facere, reprehenderit dolores aperiam excepturi. Facilis iste quibusdam adipisci doloribus omnis quisquam quaerat, hic odit.
+                During my four years of work, I have made numerous errors and solved numerous problems. Taking on new challenges has turned into a kind of addiction. 
             </p>
             <button>Get on Fiverr.</button>
        </div>
@@ -44,64 +51,112 @@
 
 
     <!-- Skill Section -->
-    <div class="skill">
-        <div class="left-part">
-            <img src="" alt="image">
+    <div class="skill" id="skill">
+        
+        <div class="left-part"> 
+            <h3 class="section-title">
+                My Skills
+            </h3>
+            <div>
+                <b>React Js</b>
+                <p>
+                    ReactJs provide awesome performance and deliver better experience
+                </p>
+            </div>
+            <div>
+                <b>Node Js</b>
+                <p>
+                    It's a light, scalable and open-source.
+                </p>
+            </div>
+            <div>
+                <b>Express Js</b>
+                <p>
+                    Express js makes Nodejs easier to manage web applications
+                </p>
+            </div>
+            <div>
+                <b>MongoDB</b>
+                <p>
+                    Flexible schema makes it easy to evolve and store data
+                </p>
+            </div>
+            <b>Other Expertise:</b> <p class="little">Javascript, Typescript, Redux JS, Mongoose,  Firebase, HTML, CSS, Sass,  Bootstrap, Material UI, NextJs, Jest, Graphql, WebRTC, SocketIO, Firebase, Gatsby, Vps Server, Nginx, Microservice, SPA, Cache, IndexDB, LocalStorage</p>
         </div>
-        <div class="right-part"> 
-            <div>
-                <b>React</b>
-                Tell my something why this
-            </div>
-            <div>
-                <b>Node</b>
-                Tell my something why this
-            </div>
-            <div>
-                <b>Express</b>
-                Tell my something why this
-            </div>
-            <div>
-                <b>Mongo</b>
-                Tell my something why this
-            </div>
-            Other Expertise: Javascript, Html, Css
+        <div class="right-part">
+            <img src="./images/Skill section.png" alt="image">
         </div>
     </div>
 
+
     <!-- Project Section  -->
-    <div class="project" >
-        <h1>Recent doing project</h1>
-        <img src="" alt="project">
-        <img src="" alt="project">
-        <img src="" alt="project">
+    <div class="project" id="project">
+        <h3 class="section-title">Recent Projects</h3>
+        <div class="container">
+            <div>
+                <img class="thumbnail" src="./images/follow 1.jpg" alt="">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, cumque!
+            </div>
+            <div>
+                <img class="thumbnail" src="./images/follow 1.jpg" alt="">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, cumque!
+            </div>
+            <div>
+                <img class="thumbnail" src="./images/follow 1.jpg" alt="">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus, cumque!
+                
+            </div>
+        </div>
     </div>
 
     <!-- Blog Section -->
-    <div class="blog">
+    <!-- <div class="blog">
         
-    </div>
+    </div> -->
 
-    <!-- Client Feedback -->
-    <div class="client">
-        <div>
-            <img src="" alt="client">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
-            </p>
+    <!-- Feedback Section -->
+    <div class="feedback" id="feedback">
+        <h3 class="section-title">
+            Clients Feedback
+        </h3>
+        <div class="container">
+            <div>
+                <img src="./images/profile.png" alt="client">
+                <b class="star">*****</b>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
+                </p>
+            </div>
+            <div>
+                <img src="./images/profile.png" alt="client">
+                <b class="star">***<span class="unstar">**</span></b>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
+                </p>
+            </div>
+            <div>
+                <img src="./images/profile.png" alt="client">
+                <b class="star">*****</b>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
+                </p>
+            </div>
+            <div>
+                <img src="./images/profile.png" alt="client">
+                <b class="star">*****</b>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
+                </p>
+            </div>
+            <div>
+                <img src="./images/profile.png" alt="client">
+                <b class="star">*****</b>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
+                </p>
+            </div>
         </div>
-        <div>
-            <img src="" alt="client">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
-            </p>
-        </div>
-        <div>
-            <img src="" alt="client">
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, voluptas?
-            </p>
-        </div>
+       
     </div>
      <script src="./script.js"></script>
 </body>
