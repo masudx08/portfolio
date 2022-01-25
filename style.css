@@ -235,7 +235,7 @@ button{
  .footer p{
      font-size: 50px;
     position: relative;
-    top: 30px;
+    top: 20px;
      display: inline-block;
      padding: 0 30px;
      border-radius: 0 0 10px 10px;
@@ -337,6 +337,24 @@ button{
         align-items: center;
         column-gap: 30px;
     }
-  
-    
+    .skill .container p{
+        font-size: 27px;
+    }
+    .footer img{
+        width: 80%;
+        height:auto;
+        margin: auto;
+    }
+    .project .container{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        justify-content: center;
+    }
+    .project .container div{
+        width: 45%;
+    }
+    .project .title{
+        font-size: 27px;
+    }
 }
